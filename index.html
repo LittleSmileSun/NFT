@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script>
+        function viewDiv(){
+            let active = document.getElementsByClassName("active")[0];
+            let hidden = document.getElementsByClassName("hidden")[0];
+            if (active.style.display === "none") {
+                active.style.display = "block";
+            } else {
+                active.style.display = "none";
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -26,14 +37,31 @@
             </div>
         </div>
         <div class="header-lang">
-            <span>RU</span>
-            <img src="icons/arrow-bottom.svg">
+            <!-- <span>RU</span> -->
+            <select class="select_lang">
+                <option>RU</option>
+                <option>EN</option>
+            </select><img src="icons/arrow-bottom.svg">
         </div>
         <div class="header-icons">
-            <img class="header-icon" src="icons/header-icon1.svg">
-            <img class="header-icon" src="icons/header-icon2.svg">
-            <img class="header-icon" src="icons/header-icon3.svg">
+            <div class="search">
+                <form action="#">
+                    <button class="hidden" value="Click" onmousedown="viewDiv()">
+                        <img class="header-icon" src="icons/header-icon1.svg">
+                    </button>
+                    <div class="active" style="display: none;">
+                        <input type="text">
+                        <!-- <button>
+                            <img class="header-icon" src="icons/header-icon1.svg">
+                        </button> -->
+                    </div>
+                </form>
+            </div>
+            <a href="#"><img class="header-icon" src="icons/header-icon2.svg"></a>
+            <a href="#"><img class="header-icon" src="icons/header-icon3.svg"></a>
         </div>
     </header>
+    <main>
+    </main>
 </body>
 </html>
