@@ -79,16 +79,36 @@ header .header-lang {
     border-radius: 10px;
     background: #1924395e;
 
-    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
-.search button {
-    background: #0c111f;
+
+header .header-lang .nice-select {
+    min-width: 70px;
+    padding-right: 20px;
+    padding-left: 10px;
+
     border: none;
-    cursor: pointer;
+    color: #ffffff;
+    background-color: transparent;
 }
 
+header .header-lang .nice-select.select_lang,
+header .header-lang .option.selected.focus {
+    font-weight: normal;
+}
+
+header .header-lang .nice-select .option:hover,
+header .header-lang .nice-select .option.focus,
+header .header-lang .nice-select .option.selected {
+    background-color: transparent;
+}
+
+.nice-select .list {
+    width: 70px;
+    background-color: transparent;
+    border: 1px solid #96969781;
+}
 
 /* Header icons */
 
@@ -102,6 +122,13 @@ header .header-icons {
     justify-content: space-between;
     align-items: center;
 }
+
+.search button {
+    background: #0c111f;
+    border: none;
+    cursor: pointer;
+}
+
 header .header-icons img {
     width: 20px;
     height: 20px;

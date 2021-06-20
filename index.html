@@ -5,21 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT</title>
-    <link rel="stylesheet" href="./style.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script>
-        function viewDiv(){
-            let active = document.getElementsByClassName("active")[0];
-            let hidden = document.getElementsByClassName("hidden")[0];
-            if (active.style.display === "none") {
-                active.style.display = "block";
-            } else {
-                active.style.display = "none";
-            }
-        };
-    </script>
+
+    <script src="libs/jquery-3.6.0.min.js"></script> 
+    <script src="libs/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
+    <link rel="stylesheet" href="libs/jquery-nice-select-master/css/nice-select.css">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -37,11 +33,11 @@
             </div>
         </div>
         <div class="header-lang">
-            <!-- <span>RU</span> -->
             <select class="select_lang">
                 <option>RU</option>
                 <option>EN</option>
-            </select><img src="icons/arrow-bottom.svg">
+            </select>
+            <!-- <img src="icons/arrow-bottom.svg"> -->
         </div>
         <div class="header-icons">
             <div class="search">
