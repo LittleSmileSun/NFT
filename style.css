@@ -37,6 +37,13 @@ header {
     height: 100%;
 }
 
+.menu-button {
+    display: none;
+}
+.burger-menu button img {
+    background: #1924395e;
+}
+
 /* Header links */
 
 .header-links {
@@ -77,6 +84,9 @@ header .header-links .links a:hover {
     opacity: 1;
 }
 
+header .header-mobile {
+    display: none;
+}
 /* Header language */
 
 header .header-lang {
