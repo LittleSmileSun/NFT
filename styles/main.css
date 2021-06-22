@@ -76,3 +76,6 @@ main {
 .main_image {
     width: 100%;
 }
+#day, #hour, #min, #sec {
+    display: flex;
+}
