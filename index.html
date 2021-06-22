@@ -6,79 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
     <script src="libs/jquery-3.6.0.min.js"></script> 
     <script src="libs/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
     <link rel="stylesheet" href="libs/jquery-nice-select-master/css/nice-select.css">
 
     <script src="script.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
-    <header>
-        <div class="header-links">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo.png">
-                </a>
+    <div class="site_container">
+        <!-- Header-->
+        <header>
+            <div class="header-links">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="#">Главная</a>
+                    <a href="#">История лотов</a>
+                    <a href="#">О проекте</a>
+                </div>
             </div>
-            <div class="links">
-                <a href="#">Главная</a>
-                <a href="#">Лоты</a>
-                <a href="#">История лотов</a>
-                <a href="#">О проекте</a>
-            </div>
-        </div>
-        <div class="header-lang">
-            <select class="select_lang">
-                <option>RU</option>
-                <option>EN</option>
-            </select>
-            <!-- <img src="icons/arrow-bottom.svg"> -->
-        </div>
-        <div class="header-icons">
-            <div class="search">
-                <form action="#">
-                    <button class="hidden" value="Click" onmousedown="viewDiv()">
-                        <img class="header-icon" src="icons/header-icon1.svg">
-                    </button>
-                    <div class="active" style="display: none;">
-                        <input type="text">
-                        <!-- <button>
-                            <img class="header-icon" src="icons/header-icon1.svg">
-                        </button> -->
+            <div class="header-icons">
+                <div class="icons-container">
+                    <a href="#"><img class="header-icon" src="icons/header-icon2.svg"></a>
+                    <a href="#"><img class="header-icon" src="icons/header-icon3.svg"></a>
+                    <div class="header-lang">
+                        <select class="select_lang">
+                            <option>RU</option>
+                            <option>EN</option>
+                        </select>
                     </div>
-                </form>
+                </div>
+                <a href="#"><img class="header-icon burger-icon" src="icons/burger-menu.svg"></a>
+                <div class="burger-menu">
+                    <button class="menu-button">
+                        <img src="icons/menu-button.svg" alt="">
+                    </button>
+                    <nav>
+                        <div class="links">
+                            <a href="#">Главная</a>
+                            <a href="#">Лоты</a>
+                            <a href="#">История лотов</a>
+                            <a href="#">О проекте</a>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <a href="#"><img class="header-icon" src="icons/header-icon2.svg"></a>
-            <a href="#"><img class="header-icon" src="icons/header-icon3.svg"></a>
-        </div>
-    </header>
-    <main>
-        <div class="counter">
-            <div class="days_counter">
-                <div class="number">0</div>
-                <div class="text_upper">ДНЕЙ</div>
+            <div class="header-mobile">
+                    <div class="header-mobile-icon">
+                        <a href="#"><img class="notification" src="icons/header-icon2.svg"></a>
+                        <a href="#"><img class="private_cab" src="icons/header-icon3.svg"></a>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png">
+                        </a>
+                    </div>
+                    <button class="menu-button">
+                        <img src="icons/menu-button.svg" alt="">
+                    </button>
             </div>
-            <div class="hour_counter">
-                <div class="number">1</div>
-                <div class="text_upper">ЧАС</div>
+        </header>
+        <!-- Main -->
+        <main>
+            <div class="left_counters">
+                <div class="days_counter">
+                    <div id="day">
+                        <div class="number" id="day0"></div>
+                        <div class="number" id="day1"></div>
+                    </div>
+                    <div class="text_upper">ДНЕЙ</div>
+                </div>
+                <div class="hour_counter">
+                    <div id="hour">
+                        <div class="number" id="hour0"></div>
+                        <div class="number" id="hour1"></div>
+                    </div>
+                    <div class="text_upper">ЧАС</div>
+                </div>
             </div>
-            <div>
-                <img src="images/main_auction.png" alt="">
+            <div class="main_image_wrapper">
+                <img class="main_image" src="images/main_auction.png" alt="">
             </div>
-            <div class="minutes_counter">
-                <div class="number">45</div>
-                <div class="text_upper">МИНУТЫ</div>
+            <div class="right_counters">
+                <div class="minutes_counter">
+                    <div id="min">
+                        <div class="number" id="min0"></div>
+                        <div class="number" id="min1"></div>
+                    </div>
+                    <div class="text_upper">МИНУТ</div>
+                </div>
+                <div class="seconds_counter">
+                    <div id="sec">
+                        <div class="number" id="sec0"></div>
+                        <div class="number" id="sec1"></div>
+                    </div>
+                    <div class="text_upper">СЕКУНД</div>
+                </div>
             </div>
-            <div class="seconds_counter">
-                <div class="number">33</div>
-                <div class="text_upper">СЕКУНД</div>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>
