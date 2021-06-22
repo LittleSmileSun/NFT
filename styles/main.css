@@ -1,0 +1,78 @@
+.main-wrapper {
+    background: #050814;
+}
+
+main {
+    width: 1180px;
+     /* 100vh - header height - header top and bottom margins */
+    height: calc(100vh - 90px - 25px - 25px);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_counters,
+.right_counters {
+    display: flex;
+    width: 32%;
+    align-items: center;
+}
+.left_counters {
+    justify-content: flex-start;
+}
+.right_counters {
+    justify-content: flex-end;
+}
+
+.days_counter,
+.hour_counter,
+.minutes_counter,
+.seconds_counter {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc((100% - 22px) / 2);
+    height: 97px;
+    background:#1924395e;
+}
+
+.days_counter {
+    margin-right: 22px;
+}
+
+.hour_counter {
+    margin-right: 44px;
+}
+
+.minutes_counter {
+    margin-left: 44px;
+    margin-right: 22px;
+}
+
+.number {
+    color: #E35050;
+    font-family: "Nunito-ExtraBold", sans-serif;
+    font-size: 35px;
+    text-shadow: 1.5px 2px 2px;
+}
+
+.text_upper {
+    color: #FFFFFF;
+    font-family: "Nunito-Light", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 4px;
+}
+
+.main_image_wrapper {
+    width: 36%;
+    display: flex;
+    align-items: center;
+}
+
+.main_image {
+    width: 100%;
+}
