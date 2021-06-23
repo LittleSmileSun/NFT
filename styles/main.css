@@ -3,6 +3,9 @@
 }
 
 main {
+}
+
+.top-container {
     width: 1180px;
      /* 100vh - header height - header top and bottom margins */
     height: calc(100vh - 90px - 25px - 25px);
@@ -78,4 +81,65 @@ main {
 }
 #day, #hour, #min, #sec {
     display: flex;
+}
+
+.bottom-container {
+    margin: 15px auto;
+    width: 1180px;
+}
+
+.graph-container {
+    display: flex;
+    background: #0c1222;
+    width: 682px;
+    height: 238px;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    height: 22px;
+    margin: 24px 37px;
+}
+.text span {
+    color: #FFFFFF;
+    font-family: 'Nunito-Regular',sans-serif ;
+}
+.text a {
+    font-family: 'Nunito-Light',sans-serif;
+    color: #40DDFF;
+}
+.graph-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 37px;
+}
+.detaile {
+    background: #192439;
+    width: 280px;
+    height: 51px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.login, .bid {
+    color: #50E3C2;
+    font-family: "Nunito-SemiBold",sans-serif;
+}
+.percent {
+    color: #50E3C2;
+    font-family: "Nunito-Regular", sans-serif;
+}
+.data {
+    color: #40DDFF;
+    font-family: "Nunito-Light", sans-serif;
+    flex-wrap: wrap;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
 }
