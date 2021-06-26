@@ -43,74 +43,141 @@
                         </select>
                     </div>
                 </div>
-                <a href="#"><img class="header-icon burger-icon" src="icons/burger-menu.svg"></a>
-                <div class="burger-menu">
-                    <button class="menu-button">
-                        <img src="icons/menu-button.svg" alt="">
-                    </button>
-                    <nav>
-                        <div class="links">
-                            <a href="#">Главная</a>
-                            <a href="#">Лоты</a>
-                            <a href="#">История лотов</a>
-                            <a href="#">О проекте</a>
-                        </div>
-                    </nav>
-                </div>
             </div>
             <div class="header-mobile">
-                    <div class="header-mobile-icon">
+                    <div class="icon">
                         <a href="#"><img class="notification" src="icons/header-icon2.svg"></a>
-                        <a href="#"><img class="private_cab" src="icons/header-icon3.svg"></a>
+                        <a href="#"><img class="mobile-lang" src="icons/mobile-lang.svg"></a>
                     </div>
                     <div class="logo">
                         <a href="#">
                             <img src="images/logo.png">
                         </a>
                     </div>
+                    <div class="icon">
+                    <a href="#"><img class="private_cab" src="icons/header-icon3.svg"></a>
                     <button class="menu-button">
                         <img src="icons/menu-button.svg" alt="">
                     </button>
+                    </div>
             </div>
         </header>
         <!-- Main -->
         <main>
-            <div class="left_counters">
-                <div class="days_counter">
-                    <div id="day">
-                        <div class="number" id="day0"></div>
-                        <div class="number" id="day1"></div>
+            <div class="top-container">
+                <div class="left_counters">
+                    <div class="days_counter">
+                        <div id="day">
+                            <div class="number" id="day0"></div>
+                            <div class="number" id="day1"></div>
+                        </div>
+                        <div class="text_upper">ДНЕЙ</div>
                     </div>
-                    <div class="text_upper">ДНЕЙ</div>
+                    <div class="hour_counter">
+                        <div id="hour">
+                            <div class="number" id="hour0"></div>
+                            <div class="number" id="hour1"></div>
+                        </div>
+                        <div class="text_upper">ЧАС</div>
+                    </div>
                 </div>
-                <div class="hour_counter">
-                    <div id="hour">
-                        <div class="number" id="hour0"></div>
-                        <div class="number" id="hour1"></div>
+                <div class="main_image_wrapper">
+                    <img class="main_image" src="images/main_auction.png" alt="">
+                </div>
+                <div class="right_counters">
+                    <div class="minutes_counter">
+                        <div id="min">
+                            <div class="number" id="min0"></div>
+                            <div class="number" id="min1"></div>
+                        </div>
+                        <div class="text_upper">МИНУТ</div>
                     </div>
-                    <div class="text_upper">ЧАС</div>
+                    <div class="seconds_counter">
+                        <div id="sec">
+                            <div class="number" id="sec0"></div>
+                            <div class="number" id="sec1"></div>
+                        </div>
+                        <div class="text_upper">СЕКУНД</div>
+                    </div>
                 </div>
             </div>
-            <div class="main_image_wrapper">
-                <img class="main_image" src="images/main_auction.png" alt="">
-            </div>
-            <div class="right_counters">
-                <div class="minutes_counter">
-                    <div id="min">
-                        <div class="number" id="min0"></div>
-                        <div class="number" id="min1"></div>
+            <div class="bottom-container">
+                <div class="graph-container">
+                    <div class="text">
+                        <span>График и детали ставки</span>
+                        <a href="#">Вся история</a>
                     </div>
-                    <div class="text_upper">МИНУТ</div>
-                </div>
-                <div class="seconds_counter">
-                    <div id="sec">
-                        <div class="number" id="sec0"></div>
-                        <div class="number" id="sec1"></div>
+                    <div class="graph-info">
+                        <div class="graph">
+                            <img src="images/graph.png" alt="">
+                        </div>
+                        <div class="graph-detaile">
+                            <div class="detaile">
+                                <div class="user-info">
+                                    <span class="login">User name</span>
+                                    <span class="data">04.06 | 12:05</span>
+                                </div>
+                                <span class="bid">465,22</span>
+                                <div class="percent-container">
+                                    <img src="icons/icon-detaile-graph.svg" alt="">
+                                    <span class="percent">+132%</span>
+                                </div>
+                            </div> 
+                            <div class="detaile">
+                                <div class="user-info">
+                                    <span class="login">User name</span>
+                                    <span class="data">04.06 | 12:05</span>
+                                </div>
+                                <span class="bid">465,22</span>
+                                <div class="percent-container">
+                                    <img src="icons/icon-detaile-graph-2.svg" alt="">
+                                    <span class="percent">+132%</span>
+                                </div>
+                            </div>  
+                            <div class="detaile">
+                                <div class="user-info">
+                                    <span class="login">User name</span>
+                                    <span class="data">04.06 | 12:05</span>
+                                </div>
+                                <span class="bid">465,22</span>
+                                <div class="percent-container">
+                                    <img src="icons/icon-detaile-graph-2.svg" alt="">
+                                    <span class="percent">+132%</span>
+                                </div>
+
+                            </div>  
+                        </div>
                     </div>
-                    <div class="text_upper">СЕКУНД</div>
                 </div>
-            </div>
+                <div class="last-bid-container">
+                    <div class="last-bid-info">
+                        <span class="text">Последняя ставка</span>
+                        <span class="data">04.06 | 12:05</span>
+                    </div>
+                    <div class="last-bid-detaile">
+                        <div class="user-photo">
+                            <img src="icons/user-icon.png" alt="">
+                            <img src="icons/user-Ellipse.png" alt="">
+                        </div>
+                        <span class="login">User name</span>
+                        <span class="number_bid">Первая ставка</span>
+                        <div class="bid-info">
+                            <img src="icons/icon-detaile-graph.svg" alt="">
+                            <span class="bid">465,22</span>
+                        </div>
+                    </div>
+                    <form>
+                    <input type="submit" class="make-bid" value="CДЕЛАТЬ СТАВКУ">
+                    </form>
+                </div>
+            </div> 
         </main>
+        <footer>
+            <a href="#">Privacy policy</a>
+            <a href="#">NFTarium 2021</a>
+            <span>by KAN angency</span>
+        </footer>
+        <div></div>
     </div>
 </body>
 </html>

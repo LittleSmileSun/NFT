@@ -9,6 +9,7 @@
         display: flex;
         justify-content: center;
         margin-top: 13px;
+        height: 72px;
     }
 
     header .burger-menu button img {
@@ -46,22 +47,32 @@
         border-radius: 10px;
         background: #1924395e;
     }
-    header .header-mobile-icon img,
+    header .icon img,
     header .menu-button img {
-        width: 16px;
+        width: 19px;
     }
-    header .notification {
+    /* header .notification {
         margin-right: 26px;
-    }
+    } */
     header .header-mobile .logo img {
         width: 120px;
     }
-    
+    header .header-mobile .icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100vw / 6);
+    }
     main {
+        
+    }
+    .top-container {
         height: auto;
-        width: 100%;
+        width: calc(100vw - 30px);
         justify-content: center;
         flex-direction: column;
+        row-gap: 16px;
+        margin: 0 15px 0 15px;
     }
 
     .left_counters,
@@ -75,9 +86,15 @@
     }
     .left_counters {
         order: 2;
+        display: flex;
+        column-gap: 1rem;
+        flex-basis: auto;
     }
     .right_counters {
         order: 3;
+        display: flex;
+        column-gap: 1rem;
+        flex-basis: auto;
     }
     .left_counters,
     .right_counters,
