@@ -1,0 +1,132 @@
+/* -----------------------
+------ HEADER BLOCK ------ 
+----------------------- */
+
+header {
+    width: 1180px;
+    height: 90px;
+    margin: 25px auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 282px;
+    grid-column-gap: 20px;
+}
+
+header .header-links, .header-lang, .header-icons {
+    height: 100%;
+}
+
+header .burger-menu,
+header .burger-icon {
+    display: none;
+}
+
+/* Header links */
+
+header .header-links {
+    border-radius: 10px;
+    background: #1924395e;
+
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+header .header-links .logo {
+    padding-left: 100px;
+}
+header .header-links .logo img {
+    width: 104px;
+    height: 13px;
+}
+
+header .header-links .links {
+    padding-left: 138px;
+    padding-right: 154px;
+    display: flex;
+    justify-content: space-between;
+}
+header .header-links .links a { 
+    color: #ffffff;
+    opacity: 0.7;
+    text-decoration: none;
+}
+header .header-links .links a:hover {
+    opacity: 1;
+}
+
+header .header-mobile {
+    display: none;
+}
+/* Header language */
+
+header .header-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+header .nice-select .list {
+    width: 70px;
+    background-color: transparent;
+    border: 1px solid #96969781;
+}
+
+header .header-lang .nice-select {
+    min-width: 70px;
+    padding-right: 20px;
+    padding-left: 10px;
+
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+header .header-lang .nice-select.select_lang,
+header .header-lang .option.selected.focus {
+    font-weight: normal;
+}
+
+header .header-lang .nice-select .option:hover,
+header .header-lang .nice-select .option.focus,
+header .header-lang .nice-select .option.selected {
+    background-color: transparent;
+}
+
+/* Header icons */
+
+header .header-icons {
+    border-radius: 10px;
+    background: #1924395e;
+
+    padding-left: 50px;
+    padding-right: 42px;
+
+    display: flex;
+}
+
+header .header-icons .icons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .search button {
+    background: #0c111f;
+    border: none;
+    cursor: pointer;
+}
+
+header .header-icons img {
+    width: 18px;
+    height: 18px;
+}
