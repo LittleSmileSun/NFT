@@ -10,10 +10,9 @@ header {
     align-items: center;
     grid-template-columns: 1fr 282px;
     grid-column-gap: 20px;
-}
-
-header .header-links, .header-lang, .header-icons {
-    height: 100%;
+    .header-links, .header-lang, .header-icons {
+        height: 100%;
+    }
 }
 
 header .burger-menu,

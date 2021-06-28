@@ -10,8 +10,7 @@ header {
   grid-template-columns: 1fr 282px;
   grid-column-gap: 20px;
 }
-
-header .header-links, .header-lang, .header-icons {
+header .header-links, header .header-lang, header .header-icons {
   height: 100%;
 }
 

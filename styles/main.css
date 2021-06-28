@@ -1,8 +1,8 @@
 .main-wrapper {
-    background: #050814;
+  background: #050814;
 }
 
-.top-container {
+main .top-container {
   width: 1180px;
   /* 100vh - header height - header top and bottom margins */
   height: calc(100vh - 90px - 25px - 25px);
@@ -11,25 +11,25 @@
   justify-content: space-between;
 }
 
-.left_counters,
-.right_counters {
+main .top-container .left_counters,
+main .top-container .right_counters {
   display: flex;
   width: 32%;
   align-items: center;
 }
 
-.left_counters {
+main .top-container .left_counters {
   justify-content: flex-start;
 }
 
-.right_counters {
+main .top-container .right_counters {
   justify-content: flex-end;
 }
 
-.days_counter,
-.hour_counter,
-.minutes_counter,
-.seconds_counter {
+main .top-container .left_counters .days_counter,
+main .top-container .left_counters .hour_counter,
+main .top-container .right_counters .minutes_counter,
+main .top-container .right_counters .seconds_counter {
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -40,27 +40,33 @@
   background: #1924395e;
 }
 
-.days_counter {
+main .top-container .left_counters .days_counter {
   margin-right: 22px;
 }
 
-.hour_counter {
+main .top-container .left_counters .hour_counter {
   margin-right: 44px;
 }
 
-.minutes_counter {
+main .top-container .right_counters .minutes_counter {
   margin-left: 44px;
   margin-right: 22px;
 }
 
-.number {
+main .top-container .left_counters .days_counter #day .number,
+main .top-container .left_counters .hour_counter #hour .number,
+main .top-container .right_counters .minutes_counter #min .number,
+main .top-container .right_counters .seconds_counter #sec .number {
   color: #E35050;
   font-family: "Nunito-ExtraBold", sans-serif;
   font-size: 35px;
   text-shadow: 1.5px 2px 2px;
 }
 
-.text_upper {
+main .top-container .left_counters .days_counter .text_upper,
+main .top-container .left_counters .hour_counter .text_upper,
+main .top-container .right_counters .minutes_counter .text_upper,
+main .top-container .right_counters .seconds_counter .text_upper {
   color: #FFFFFF;
   font-family: "Nunito-Light", sans-serif;
   font-size: 12px;
@@ -68,28 +74,31 @@
   letter-spacing: 4px;
 }
 
-.main_image_wrapper {
+main .top-container .main_image_wrapper {
   width: 36%;
   display: flex;
   align-items: center;
 }
 
-.main_image {
+main .top-container .main_image_wrapper .main_image {
   width: 100%;
 }
 
-#day, #hour, #min, #sec {
+main .top-container .left_counters .days_counter #day,
+main .top-container .left_counters .hour_counter #hour,
+main .top-container .right_counters .minutes_counter #min,
+main .top-container .right_counters .seconds_counter #sec {
   display: flex;
 }
 
-.bottom-container {
+main .bottom-container {
   margin: 15px auto;
   width: 1180px;
   display: flex;
   column-gap: 20px;
 }
 
-.graph-container {
+main .bottom-container .graph-container {
   display: flex;
   background: #0c1222;
   width: 682px;
@@ -98,7 +107,7 @@
   flex-direction: column;
 }
 
-.graph-container .text {
+main .bottom-container .graph-container .text {
   display: flex;
   justify-content: space-between;
   width: 620px;
@@ -106,23 +115,25 @@
   margin: 24px 37px;
 }
 
-.graph-container .text span {
+main .bottom-container .graph-container .text span {
   color: #FFFFFF;
   font-family: "Nunito-Regular", sans-serif;
+  font-size: 16px;
 }
 
-.graph-container .text a {
+main .bottom-container .graph-container .text a {
   font-family: "Nunito-Light", sans-serif;
   color: #40ddff;
+  font-size: 10px;
 }
 
-.graph-info {
+main .bottom-container .graph-container .graph-info {
   display: flex;
   justify-content: space-between;
   margin: 0 37px;
 }
 
-.detaile {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile {
   background: #192439;
   width: 280px;
   height: 51px;
@@ -134,63 +145,68 @@
   text-shadow: 0px 0px 1px;
 }
 
-.detaile .login, .bid {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .user-info .login,
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .bid {
   font-family: "Nunito-SemiBold", sans-serif;
 }
 
-.detaile .percent {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .percent-container .percent {
   font-family: "Nunito-Regular", sans-serif;
   font-size: 11px;
 }
 
-.detaile .data {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .user-info .data {
   font-family: "Nunito-Light", sans-serif;
   flex-wrap: wrap;
   font-size: 9px;
   text-align: right;
 }
 
-.user-info {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .user-info {
   display: flex;
   flex-direction: column;
 }
 
-.percent-container {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .percent-container {
   display: flex;
   align-items: center;
 }
 
-.percent-container img {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile .percent-container img {
   margin-right: 5px;
 }
 
-.graph-detaile .detaile:nth-child(1) {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(1) {
   background: rgba(25, 36, 57, 0.3);
 }
 
-.graph-detaile .detaile:nth-child(2) {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(2) {
   color: white;
   opacity: 0.3;
   background: transparent;
 }
 
-.graph-detaile .detaile:nth-child(3) {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(3) {
   color: white;
   opacity: 0.1;
   background: transparent;
 }
 
-.graph-detaile .detaile:nth-child(1) .login,
-.graph-detaile .detaile:nth-child(1) .bid,
-.graph-detaile .detaile:nth-child(1) .percent {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(1) .user-info .login,
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(1) .bid,
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(1) .percent-container .percent {
   color: #50E3C2;
 }
 
-.graph-detaile .detaile:nth-child(1) .data {
+main .bottom-container .graph-container .graph-info .graph-detaile .detaile:nth-child(1) .user-info .data {
   color: #40DDFF;
 }
+main .bottom-container .last-bid-container {
+  display: flex;
+  flex-direction: column;
+}
 
-.last-bid-container {
+main .bottom-container .last-bid-container .last-bid-main {
   display: flex;
   background: #0c1222;
   width: 469px;
@@ -200,14 +216,18 @@
   color: white;
 }
 
-.last-bid-container .last-bid-detaile {
+main .bottom-container .last-bid-container .last-bid-detaile .user-info-mobile {
+  display: none;
+}
+
+main .bottom-container .last-bid-container .last-bid-detaile {
   display: flex;
   justify-content: space-between;
   margin: 0px 27px 28px 27px;
   align-items: center;
 }
 
-.last-bid-container .last-bid-info {
+main .bottom-container .last-bid-container .last-bid-info {
   display: flex;
   justify-content: space-between;
   margin: 23px 27px;
@@ -215,60 +235,60 @@
   height: 22px;
 }
 
-.last-bid-container .last-bid-info .text {
+main .bottom-container .last-bid-container .last-bid-info .text {
   font-family: "Nunito-Regular", sans-serif;
   font-size: 16px;
 }
 
-.last-bid-container .last-bid-info .data {
+main .bottom-container .last-bid-container .last-bid-info .data {
   font-family: "Nunito-Light", sans-serif;
   font-size: 11px;
 }
 
-.last-bid-container .last-bid-detaile .user-photo {
+main .bottom-container .last-bid-container .last-bid-detaile .user-photo {
   position: relative;
   width: 42px;
   height: 43px;
 }
 
-.last-bid-container .last-bid-detaile .user-photo img:nth-child(1) {
+main .bottom-container .last-bid-container .last-bid-detaile .user-photo img:nth-child(1) {
   position: absolute;
   z-index: 2;
   top: 30%;
   left: 35%;
 }
 
-.last-bid-container .last-bid-detaile .user-photo img:nth-child(2) {
+main .bottom-container .last-bid-container .last-bid-detaile .user-photo img:nth-child(2) {
   position: relative;
   z-index: 1;
 }
 
-.last-bid-container .last-bid-detaile .login {
+main .bottom-container .last-bid-container .last-bid-detaile .login {
   font-family: "Nunito-SemiBold", sans-serif;
   font-size: 16px;
 }
 
-.last-bid-container .last-bid-detaile .number_bid {
+main .bottom-container .last-bid-container .last-bid-detaile .number_bid {
   font-family: "Nunito-Light", sans-serif;
   font-size: 12px;
 }
 
-.last-bid-container .last-bid-detaile .bid {
+main .bottom-container .last-bid-container .last-bid-detaile .bid-info .bid {
   font-family: "Nunito-ExtraBold", sans-serif;
   font-size: 24px;
   color: #50e3c2;
 }
 
-.last-bid-container .last-bid-detaile .bid-info {
+main .bottom-container .last-bid-container .last-bid-detaile .bid-info {
   display: flex;
   align-items: center;
 }
 
-.last-bid-container .last-bid-detaile .bid-info img {
+main .bottom-container .last-bid-container .last-bid-detaile .bid-info img {
   margin-right: 8px;
 }
 
-.make-bid {
+main .bottom-container .last-bid-container .make-bid {
   background: linear-gradient(0deg, #50E3C2, #50E3C2);
   width: 469px;
   height: 70px;
